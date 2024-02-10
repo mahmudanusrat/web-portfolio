@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@200&display=swap');
+:root{
+    --first-color:hsl(9, 78%, 71%);
+    --text-color: hsl(0, 8%, 95%);
+    --body-color: hsl(0, 0%, 7%);
+    --title-color:hsl(0, 0%, 77%);
+    --border-color: hsl(0, 8%, 95%);
+    --container-color:hsl(0, 0%, 14%);
+
+    --body-font: 'Lato', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+
+    --big-font-size: 3.6rem;
+    --normal-font-size:1.2rem;
+    --small-font-size: 1rem;
+    --smaller-font-size:0.87rem;
+    --h1-font-size:3.75rem;
+    --h2-font-size:2rem;
+    --h3-font-size: 1.5rem;
+
+    --transition: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
+    --radius: 0.5rem;
+
+    --z-tooltip: 10;
+    --z-fixed:100;
+    
+}
+@media  and (max-width: 992px) {
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+body{
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+}
+body{
+    background-color: var(--body-colotr);
+}
+
+h1,
+h2,
+h3{
+    color: var(--title-color);
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 1.65rem;
+}
+img{
+    max-width: 100%;
+}
+
+input,
+textarea{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.container{
+    max-width: 1260px;
+    background-color: var(--container-color);
+    margin-inline: auto;
+    padding-inline: 0.8rem;
+}
+.grid{
+    display: grid;
+    gap: 1.75rem;
+}
+.section{
+    padding-block: 10rem;
+}
+.section_title{
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+}
+.section_title:not(.about .section_title .contact .section_title),
+.section_description{
+    text-align: center;
+}
+.section_description{
+    max-width: 600px;
+    margin-inline: auto;
+}
+.btn{
+    display: inline-block;
+    color: var(--title-color);
+    background-origin: var(--first-color);
+    border: 2px solid var(--first-color);
+    padding: 1rem 2.5rem;
+    border-radius: var(--radius);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s var(--transition);
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--first-color);
+}
+.main{
+    background-color: var(--container-color);
+}
+.home{
+    padding-block: 20rem 20rem;
+}
+.home_container{
+    text-align: center;
+    align-items: right;
+}
+.home_subtitle{
+    font-size: var(--small-font-size);
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1.25rem;
+    display: block;
+}
+.home_title{
+    font-family: var(--second-font);
+    font-size: var(--big-font-size);
+    font-weight: 800;
+}
+.home_content span{
+    color: var(--first-color);
+}
+.about{
+    background-color: var(--container-color);
+}
+.about_container{
+    grid-template-columns: 7fr 7fr;
+    align-items: center;
+    column-gap: 4rem;
+}
+.about_img{
+    border-radius: var(--radius);
+}
+.about_title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+.about_description{
+    margin-bottom: 2rem;
+}
+.tabs_btns{
+    display: flex;
+    column-gap: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+.tabs_btn,
+.tabs_description span:first-child {
+    font-weight: 500;
+}
+.tabs_btn{
+    cursor: pointer;
+    position: relative;
+    color: var(--title-color);
+    padding-bottom: 0.5rem;
+}
+  
+.tabs_btn::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: all 0.3s var(--transition);
+}
+.tabs_data{
+    row-gap: 1rem;
+}
+.tabs_description span:last-child {
+    display: block;
+}
+.tabs_btn.tabs_active{
+    color: var(--first-color);
+}
+.tabs_btn.tabs_active::after {
+    background-color: var(--first-color);
+    width: 100%;
+}
+.tabs_item[data-content]{
+    display: none;
+}
+.tab_active[data-content]{
+    display: block;
+}
+.project{
+    padding-block: 10rem 20rem;
+    background-color: var(--container-color);
+}
+.project_container {
+    grid-template-columns: repeat(3 1fr);
+}
+.project_item{
+    position: relative;
+    cursor: pointer;
+    border-radius: var(--radius);
+}
+.project_item::after,
+.project_data{
+    position: absolute;
+}
+.project_item::after{
+    content: '';
+    inset: 0;
+    background: linear-gradient(180deg, transparent, var(--first-color));
+    opacity: 0;
+}
+.project_data{
+    inset-inline: 2rem;
+    bottom: 1.25rem;
+    text-align: center;
+    z-index: var(--z-tooltip);
+}
+.project_subtitle,
+.project_description {
+color: var(--title-color);
+opacity: 0.7;
+}
+.project_subtitle{
+    font-size: var(--small-font-size);
+    margin-bottom: 0.25rem;
+}
+.project_title{
+    font-size: var(--h2-font-size);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.project_description{
+    font-weight: 400;
+    display: none;
+}
+.project_item:hover::after{
+    opacity: 1;
+}
+.project_item:hover .project_img{
+    transform: scale(1.1);
+}
+.project_item:hover .project_description{
+   display: block;
+}
+.project_item:hover .project_data{
+    transform: scale(1.1);
+}
+.project_img{
+    vertical-align: middle;
+    transition: all 1s var(--transition);
+}
+
+.contact_container{
+    grid-template-columns: repeat(1, 5fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+.contact_description,
+.contact_input{
+    font-weight: 400;
+}
+.contact_description{
+    margin-bottom: 3rem;
+}
+.contact_description a{
+    color: var(--title-color);
+    font-weight: 500;
+}
+.contact_form n{
+    position: relative;
+}
+.contact_input{
+    border: 2px solid var(--border-color);
+    padding: 1rem 1.25rem;
+    width: 100%;
+    border-radius: var(--radius);
+    font-size: var(--smaller-font-size);
+    margin-bottom: 1.25rem;
+}
+.textarea{
+    height: 120px;
+    resize: none;
+}
+.error_message{
+    position: absolute;
+    bottom: -12%;
+    left: 0;
+    font-size: var(--small-font-size);
+    font-weight: 400;
+}

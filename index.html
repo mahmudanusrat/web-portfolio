@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio of Mahmuda Nusrat</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="home" id="home" >
+            <div class="home_container container grid">
+                <div class="home_content">
+                    <span class="home_subtitle">Welcome To My World</span>
+                    <h1 class="home_title ">I'm Mahmuda Nusrat</h1>
+                </div>
+            </div>  
+        </section>
+
+        <section class="about" id="about" >
+            <div class="about_container container grid">
+                <img src="images/mypic.jpg" class="about_img">
+                <div class="about_content">
+                    <h1 class="about_title">About Me</h1>
+                    <p class="about_description">
+                        A dedicated and motivated Web Developer with strong proficiency in HTML, CSS, JavaScript,PHP.
+                         Skilled in developing responsive and user-friendly websites. 
+                         Excited to gain hands-on experience and learn from experienced professionals in the field.
+                    </p>
+ 
+                    <div class="tabs_btns">
+                        <span class="tabs_btn tabs_active" data-target="#skills">Skills</span>
+                        <span class="tabs_btn" data-target="#experience">Experience</span>
+                        <span class="tabs_btn" data-target="#education">Education</span>
+                    </div>
+
+                    <div class="tabs_content">
+                        <div class="tabs_item tab_active" data-content id="skills">
+                            <div class="tabs_data grid">
+                                <p class="tabs_description">
+                                    <span> Programming Languages:</span>
+                                    <span> C, Python, PHP</span>
+                                </p>
+                                <p class="tabs_description">
+                                    <span> Web Technologies:</span>
+                                    <span> HTML, CSS, JavaScript (Node.js, Express.js), Bootstrap Framework, Laravel PHP Framework</span>
+                                </p>
+                                <p class="tabs_description">
+                                    <span> Database Management:</span>
+                                    <span>MySQL, MongoDB, PostgreSQL</span>
+                                </p>  
+                            </div>
+                        </div>
+                        
+                        <div class="tabs_item" data-content id="experience">
+                            <div class="tabs_data grid">
+                                <p class="tabs_description">
+                                    <span> Software Engineer Trainee</span>-REEA Digital Limited
+                                    <span> 2023 - Present</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tabs_item" data-content id="education">
+                            <div class="tabs_data grid">
+                                <p class="tabs_description">
+                                    <span> B.Sc. In CSE </span>-University of Information Technology & Sciences
+                                    <span> 2023 </span>
+                                </p>
+                                <p class="tabs_description">
+                                    <span> H.S.C. In Science </span>-Abujar Ghifari University College
+                                    <span> 2019 </span>
+                                </p>
+                                <p class="tabs_description">
+                                    <span> S.S.C. In Science </span>-Al Furqan English High School & Girls College
+                                    <span> 2017 </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <section class="project" id="project">
+            <h2 class="section_title">My Projects</h2>
+            <div class="project_container container grid">
+                <div class="project_item">
+                    <img src="images/projectpic.jpg" class="project_img">
+                    <div class="project_data">
+                        <h3 class="project_title">HealthBox</h3>
+                        <p class="project_description">Designed and implemented a user-friendly healthcare information system with advanced features for secure data storage.
+                            Utilized responsive design principles and collaborated with a diverse team to enhance healthcare information management.
+                        </p>
+                    </div>
+                </div>
+                <div class="project_item">
+                    <img src="images/projectpic.jpg" class="project_img">
+                    <div class="project_data">
+                        <h3 class="project_title">HealthBox</h3>
+                        <p class="project_description">Designed and implemented a user-friendly healthcare information system with advanced features for secure data storage.
+                            Utilized responsive design principles and collaborated with a diverse team to enhance healthcare information management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact_container container grid">
+                <div class="contact_content">
+                    <h2 class="section_title">Hire Me</h2>
+                    <p class="contact_description">
+                        I am open to work. Contact with me via:
+                        <a href="tel:+8801744248461">+8801744248461</a><br>
+                        <a href="mailto:mnusrat454@gmail.com">mnusrat454@gmail.com</a>
+                    </p>
+                    <form class="contact_form" id="contact-form">
+                        <div class="contact_form-input">
+                            <input 
+                            type="text"
+                            name="name"
+                            placeholder="Your name"
+                            class="contact_input"
+                            id="contact-name"
+                            />
+                        </div>
+                        <div class="contact_form-input">
+                            <input 
+                            type="email"
+                            name="email"
+                            placeholder="Your E-mail"
+                            class="contact_input"
+                            id="contact-email"
+                            />
+                        </div>
+                        <div class="contact_form-input">
+                            <input 
+                            type="text"
+                            name="subject"
+                            placeholder="Write a subject"
+                            class="contact_input"
+                            id="contact-subject"
+                            />
+                        </div>
+                        <div class="contact_form-input">
+                            <textarea
+                             name="message" 
+                             id="contact-message"
+                             class="contact_input textarea" 
+                             placeholder="Your Message">
+                            </textarea>
+                        </div>
+                        <input type="submit" value="submit" class="btn" />
+                        <p class="error_message" id="error-message">Error</p>
+                    </form>
+                </div>
+
+            </div>
+        
+        <button class="btn btn-success ">Download CV</button>
+        <ul class="list">
+            <li><b>Email:</b> mnusrat454@gmail.com</li>
+            <li>Contact: 01744248461</li>
+            <li>Address: Dhaka, Bangladesh</li>
+            <li>Linkedin: linkedin.com/in/mahmuda-nusrat/</li>
+            <li>Github: github.com/mahmudanusrat</li>
+         </ul>
+
+<script src="main.js"></script>      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>
