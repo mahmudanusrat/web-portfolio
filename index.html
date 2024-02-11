@@ -9,170 +9,464 @@
     <title>Portfolio of Mahmuda Nusrat</title>
 </head>
 
-<body>
-    <main class="main">
-        <section class="home" id="home" >
-            <div class="home_container container grid">
-                <div class="home_content">
-                    <span class="home_subtitle">Welcome To My World</span>
-                    <h1 class="home_title ">I'm Mahmuda Nusrat</h1>
+<body id="top" class="dark_theme">
+    <header class="header" data-header>
+        <div class="container">
+          <div class="navbar-actions">
+            <select name="language" id="lang">
+                <option value="eng">English</option>
+                <option value="ban">Bangla</option>
+            </select>
+    
+            <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn="">
+              <span class="icon"></span>
+            </button>
+    
+          </div>
+    
+          <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn="">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+    
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+    
+              <li>
+                <a href="#home" class="navbar-link">Home.</a>
+              </li>
+    
+              <li>
+                <a href="#about" class="navbar-link">About.</a>
+              </li>
+    
+              <li>
+                <a href="#skills" class="navbar-link">Skills.</a>
+              </li>
+    
+              <li>
+                <a href="#project" class="navbar-link">Project.</a>
+              </li>
+    
+              <li>
+                <a href="#contact" class="navbar-link">Contact.</a>
+              </li>
+    
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    
+      <main class="main">
+        <article class="container">
+<!-- #home-->
+            <section class="home" id="home" >
+                <div class="home-content">
+                    <span class="home-subtitle">Welcome To My World</span>
+                    <h1 class="home-title ">I'm Mahmuda Nusrat</h1>
+                    <a href="#contact" class="btn btn-success">Get in touch</a>
                 </div>
-            </div>  
-        </section>
+            </section>
 
-        <section class="about" id="about" >
-            <div class="about_container container grid">
-                <img src="images/mypic.jpg" class="about_img">
-                <div class="about_content">
-                    <h1 class="about_title">About Me</h1>
-                    <p class="about_description">
-                        A dedicated and motivated Web Developer with strong proficiency in HTML, CSS, JavaScript,PHP.
-                         Skilled in developing responsive and user-friendly websites. 
-                         Excited to gain hands-on experience and learn from experienced professionals in the field.
+<!-- #about--> 
+            <section class="about" id="about" >
+                <figure class="about-pic">
+                <img src="images/mypic.jpg">
+                </figure>
+                <div class="about-content section-content">
+                    <p class="section-subtitle">About me</p>
+          
+                    <p class="section-text">
+                      Hi! I’m Mahmuda Nusrat, and I’m a developer who has passion for building clean web applications with intuitive
+                      functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
+                      curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have
+                      worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
                     </p>
- 
-                    <div class="tabs_btns">
-                        <span class="tabs_btn tabs_active" data-target="#skills">Skills</span>
-                        <span class="tabs_btn" data-target="#experience">Experience</span>
-                        <span class="tabs_btn" data-target="#education">Education</span>
+          
+                    <div class="btn-group">
+                      <button class="btn btn-secondary">Hire me</button>
+          
+                      <button class="btn btn-primary">Download cv</button>
                     </div>
+                </div>
+            </section>
+            
+<!-- - #SKILLS-->
+            <section class="skills" id="skills">
+                <div class="skills-content section-content">
+                    <p class="section-subtitle">My skills</p>
+                    <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+                    <p class="section-text">
+                        I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.
+                    </p>
+                    <div class="skills-toggle" data-toggle-box="">
+                        <button class="toggle-btn active" data-toggle-btn="">Skills</button>
+                        <button class="toggle-btn" data-toggle-btn="">Tools</button>
+                    </div>
+                </div>
 
-                    <div class="tabs_content">
-                        <div class="tabs_item tab_active" data-content id="skills">
-                            <div class="tabs_data grid">
-                                <p class="tabs_description">
-                                    <span> Programming Languages:</span>
-                                    <span> C, Python, PHP</span>
-                                </p>
-                                <p class="tabs_description">
-                                    <span> Web Technologies:</span>
-                                    <span> HTML, CSS, JavaScript (Node.js, Express.js), Bootstrap Framework, Laravel PHP Framework</span>
-                                </p>
-                                <p class="tabs_description">
-                                    <span> Database Management:</span>
-                                    <span>MySQL, MongoDB, PostgreSQL</span>
-                                </p>  
+                <div class="skills-box" data-skills-box="">
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">HTML5</div>
+                                <div class="card-icon">
+                                    <img src="./assets/images/html5.png" alt="HTML5 logo">
+                                </div>
                             </div>
-                        </div>
+                        </li>
                         
-                        <div class="tabs_item" data-content id="experience">
-                            <div class="tabs_data grid">
-                                <p class="tabs_description">
-                                    <span> Software Engineer Trainee</span>-REEA Digital Limited
-                                    <span> 2023 - Present</span>
-                                </p>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">CSS3</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/css3.png" alt="CSS3 logo">
+                                </div>
                             </div>
-                        </div>
+                            </li>
 
-                        <div class="tabs_item" data-content id="education">
-                            <div class="tabs_data grid">
-                                <p class="tabs_description">
-                                    <span> B.Sc. In CSE </span>-University of Information Technology & Sciences
-                                    <span> 2023 </span>
-                                </p>
-                                <p class="tabs_description">
-                                    <span> H.S.C. In Science </span>-Abujar Ghifari University College
-                                    <span> 2019 </span>
-                                </p>
-                                <p class="tabs_description">
-                                    <span> S.S.C. In Science </span>-Al Furqan English High School & Girls College
-                                    <span> 2017 </span>
-                                </p>
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">JavaScript</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                                </div>
                             </div>
-                        </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">jQuery</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/jquery.png" alt="jQuery logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Bootstrap</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Vue</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/vue.png" alt="Vue logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">SASS</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/sass.png" alt="SASS logo">
+                                </div>
+                            </div>
+                            </li>
+
+                        </ul>
+
+                        <ul class="tools-list">
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Ajax</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/ajax.png" alt="Ajax logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Webpack</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/webpack.png" alt="Webpack logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Git</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/git.png" alt="Git logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Npm</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/npm.png" alt="Npm logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Command Line</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/command.png" alt="Command Line logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">VS Code</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Photoshop</div>
+
+                                <div class="card-icon">
+                                <img src="./assets/images/photoshop.png" alt="Photoshop logo">
+                                </div>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Adobe XD</div>
+                                <div class="card-icon">
+                                <img src="./assets/images/adobe-xd.png" alt="Adobe XD logo">
+                                </div>
+                            </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </div>  
-        </section>
+            </section>
 
-        <section class="project" id="project">
-            <h2 class="section_title">My Projects</h2>
-            <div class="project_container container grid">
-                <div class="project_item">
-                    <img src="images/projectpic.jpg" class="project_img">
-                    <div class="project_data">
-                        <h3 class="project_title">HealthBox</h3>
-                        <p class="project_description">Designed and implemented a user-friendly healthcare information system with advanced features for secure data storage.
-                            Utilized responsive design principles and collaborated with a diverse team to enhance healthcare information management.
-                        </p>
+<!-- #project-->
+            <section class="project" id="project">
+                <ul class="project-list">
+                    <li>
+                        <div class="project-content section-content">
+                            <p class="section-subtitle">My Works</p>
+                            <p class="section-text">
+                                We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+                                elegant interface helps any non-technical clients.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="project-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+                            <time class="publish-date" datetime="2022-04">April 2022</time>
+                        </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="project-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+                            <time class="publish-date" datetime="2022-04">April 2022</time>
+                        </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <button class="load-more">Load more work</button>
+                    </li>
+                </ul>
+            </section>
+
+<!-- #contact-->
+            <section class="contact" id="contact">
+                <div class="contact-content section-content">
+                    <p class="section-subtitle">Contact</p>
+                    <p class="section-text">
+                    Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.</p>
+                    <ul class="contact-list">
+                        <li class="contact-list-item">
+                            <div class="contact-item-icon">
+                                <ion-icon name="location-outline" role="img" class="md hydrated" aria-label="location outline"></ion-icon>
+                            </div>
+
+                            <div class="wrapper">
+                                <h3 class="h4 contact-item-title">Address:</h3>
+
+                                <address class="contact-info">
+                                Dhaka, Bangladesh
+                                </address>
+                            </div>
+                    </li>
+
+                    <li class="contact-list-item">
+
+                    <div class="contact-item-icon">
+                        <ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline"></ion-icon>
                     </div>
-                </div>
-                <div class="project_item">
-                    <img src="images/projectpic.jpg" class="project_img">
-                    <div class="project_data">
-                        <h3 class="project_title">HealthBox</h3>
-                        <p class="project_description">Designed and implemented a user-friendly healthcare information system with advanced features for secure data storage.
-                            Utilized responsive design principles and collaborated with a diverse team to enhance healthcare information management.
-                        </p>
+
+                    <div class="wrapper">
+                        <h3 class="h4 contact-item-title">Phone:</h3>
+                        <a href="tel:01234567789" class="contact-info">01744248461</a>
                     </div>
+
+                    </li>
+
+                    <li class="contact-list-item">
+                    <div class="contact-item-icon">
+                        <ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
+                    </div>
+
+                    <div class="wrapper">
+                        <h3 class="h4 contact-item-title">Email:</h3>
+
+                        <a href="mailto:info@jack.com" class="contact-info">info@jack.com</a>
+                        </div>
+                    </li>
+
+                    <li>
+                    <ul class="contact-social-list">
+
+                        <li>
+                        <a href="#" class="contact-social-link">
+                            <div class="tooltip">Facebook</div>
+
+                            <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href="#" class="contact-social-link">
+                            <div class="tooltip">Twitter</div>
+
+                            <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href="#" class="contact-social-link">
+                            <div class="tooltip">Linkedin</div>
+
+                            <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href="#" class="contact-social-link">
+                            <div class="tooltip">Github</div>
+
+                            <ion-icon name="logo-youtube" role="img" class="md hydrated" aria-label="logo youtube"></ion-icon>
+                        </a>
+                        </li>
+
+                    </ul>
+                    </li>
+
+                </ul>
+
                 </div>
-            </div>
 
+                <form action="" class="contact-form">
 
-        </section>
+                <div class="form-wrapper">
 
-        <section class="contact" id="contact">
-            <div class="contact_container container grid">
-                <div class="contact_content">
-                    <h2 class="section_title">Hire Me</h2>
-                    <p class="contact_description">
-                        I am open to work. Contact with me via:
-                        <a href="tel:+8801744248461">+8801744248461</a><br>
-                        <a href="mailto:mnusrat454@gmail.com">mnusrat454@gmail.com</a>
-                    </p>
-                    <form class="contact_form" id="contact-form">
-                        <div class="contact_form-input">
-                            <input 
-                            type="text"
-                            name="name"
-                            placeholder="Your name"
-                            class="contact_input"
-                            id="contact-name"
-                            />
-                        </div>
-                        <div class="contact_form-input">
-                            <input 
-                            type="email"
-                            name="email"
-                            placeholder="Your E-mail"
-                            class="contact_input"
-                            id="contact-email"
-                            />
-                        </div>
-                        <div class="contact_form-input">
-                            <input 
-                            type="text"
-                            name="subject"
-                            placeholder="Write a subject"
-                            class="contact_input"
-                            id="contact-subject"
-                            />
-                        </div>
-                        <div class="contact_form-input">
-                            <textarea
-                             name="message" 
-                             id="contact-message"
-                             class="contact_input textarea" 
-                             placeholder="Your Message">
-                            </textarea>
-                        </div>
-                        <input type="submit" value="submit" class="btn" />
-                        <p class="error_message" id="error-message">Error</p>
-                    </form>
+                    <label for="name" class="form-label">Name</label>
+
+                    <div class="input-wrapper">
+
+                    <input type="text" name="name" id="name" required="" placeholder="e.g John Doe" class="input-field">
+
+                    <ion-icon name="person-circle" role="img" class="md hydrated" aria-label="person circle"></ion-icon>
+
+                    </div>
+
                 </div>
 
-            </div>
-        
-        <button class="btn btn-success ">Download CV</button>
-        <ul class="list">
-            <li><b>Email:</b> mnusrat454@gmail.com</li>
-            <li>Contact: 01744248461</li>
-            <li>Address: Dhaka, Bangladesh</li>
-            <li>Linkedin: linkedin.com/in/mahmuda-nusrat/</li>
-            <li>Github: github.com/mahmudanusrat</li>
-         </ul>
+                <div class="form-wrapper">
 
-<script src="main.js"></script>      
+                    <label for="email" class="form-label">Email</label>
+
+                    <div class="input-wrapper">
+
+                    <input type="email" name="email" id="email" required="" placeholder="e.g johndoe@mail.com" class="input-field">
+
+                    <ion-icon name="mail" role="img" class="md hydrated" aria-label="mail"></ion-icon>
+
+                    </div>
+
+                </div>
+
+                <div class="form-wrapper">
+
+                    <label for="phone" class="form-label">Phone</label>
+
+                    <div class="input-wrapper">
+
+                    <input type="tel" name="phone" id="phone" required="" placeholder="Phone Number" class="input-field">
+
+                    <ion-icon name="call" role="img" class="md hydrated" aria-label="call"></ion-icon>
+
+                    </div>
+
+                </div>
+
+                <div class="form-wrapper">
+
+                    <label for="message" class="form-label">Message</label>
+
+                    <div class="input-wrapper">
+
+                    <textarea name="message" id="message" required="" placeholder="Write message..." class="input-field"></textarea>
+
+                    <ion-icon name="chatbubbles" role="img" class="md hydrated" aria-label="chatbubbles"></ion-icon>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send</button>
+
+                </form>
+            </section>
+</article>
+</main>
+
+    <!-- #FOOTER-->
+    <footer class="footer">
+        <i>Copyright ©2024 Mahmuda Nusrat. All rights reserved</i>
+    </footer>
+
+
+    <script src="main.js"></script>      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
 </body>
 </html>
